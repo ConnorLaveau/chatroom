@@ -2,7 +2,7 @@
 /* Chat container styles */
 .chat-container {
     width: 90vw;
-    margin: auto auto; /* Center the chat container horizontally */
+    margin: 15px auto; /* Center the chat container horizontally */
     height: 90vh; /* Take up the full height of the viewport */
     display: flex;
     flex-direction: column;
@@ -48,8 +48,9 @@
     cursor: pointer;
 }
 
-.chat-input button:hover {
-    background-color: #45a049;
+.chat-input button:hover,
+.chat-input button:active {
+    background-color: lightblue;
 }
 
 .timestamp {
@@ -67,3 +68,4 @@
     color: darkorange; /* Choose a color for other users' names */
     font-weight: bold;
 }
+
