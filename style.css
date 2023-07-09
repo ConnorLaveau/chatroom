@@ -1,4 +1,9 @@
 
+h1 {
+    text-align: center;
+    font-size: calc(2vw + 2vh);
+}
+
 /* Chat container styles */
 .chat-container {
     max-width: 85vw;
