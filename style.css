@@ -1,14 +1,20 @@
+
 /* Chat container styles */
 .chat-container {
-    width: 300px;
-    margin: 20px auto;
+    width: 90vw;
+    margin: auto auto; /* Center the chat container horizontally */
+    height: 90vh; /* Take up the full height of the viewport */
+    display: flex;
+    flex-direction: column;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: whitesmoke;
 }
 
 /* Chat messages styles */
 .chat-messages {
+    flex-grow: 1; /* Expand to fill the remaining vertical space */
     height: 300px;
     padding: 10px;
     overflow-y: scroll;
@@ -36,7 +42,7 @@
     padding: 5px 10px;
     border: none;
     border-radius: 3px;
-    background-color: #4CAF50;
+    background-color: dodgerblue;
     color: #fff;
     font-size: 14px;
     cursor: pointer;
@@ -44,4 +50,20 @@
 
 .chat-input button:hover {
     background-color: #45a049;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.current-user {
+    color: dodgerblue; /* Choose a color for the current user's name */
+    font-weight: bold;
+}
+
+.other-user {
+    color: darkorange; /* Choose a color for other users' names */
+    font-weight: bold;
 }
